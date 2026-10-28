@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinturas DIAMANTE | Dale brillo a tus espacios</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                            dark: '#0f172a',
+                            card: '#1e293b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 20%, rgba(22, 163, 74, 0.15) 0%, rgba(15, 23, 42, 1) 70%);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center shadow-lg shadow-brand-500/30">
+                    <i data-lucide="gem" class="w-6 h-6 text-white"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-brand-400 bg-clip-text text-transparent">DIAMANTE</span>
+                    <span class="block text-[10px] uppercase tracking-widest text-brand-400 font-semibold">Pinturas para Interiores</span>
+                </div>
+            </div>
+
+            <!-- Navegación Escritorio -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#inicio" class="hover:text-brand-400 transition-colors">Inicio</a>
+                <a href="#visualizador" class="hover:text-brand-400 transition-colors">Visualizador</a>
+                <a href="#calculadora" class="hover:text-brand-400 transition-colors">Calculadora</a>
+                <a href="#catalogo" class="hover:text-brand-400 transition-colors">Catálogo</a>
+                <a href="#nosotros" class="hover:text-brand-400 transition-colors">Nosotros</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="#contacto" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-sm transition-all shadow-lg shadow-brand-600/20">
+                    <i data-lucide="message-circle" class="w-4 h-4 mr-2"></i> Cotizar Pedido
+                </a>
+                <button id="menu-btn" class="md:hidden p-2 text-slate-300 hover:text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-6 space-y-3 glass-card border-t border-slate-800">
+            <a href="#inicio" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800">Inicio</a>
+            <a href="#visualizador" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800">Visualizador</a>
+            <a href="#calculadora" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800">Calculadora</a>
+            <a href="#catalogo" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800">Catálogo</a>
+            <a href="#nosotros" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800">Nosotros</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center hero-gradient pt-28 pb-16 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#22c55e_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-brand-950/80 border border-brand-500/30 text-brand-400 text-xs font-semibold tracking-wide uppercase">
+                    <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                    <span>Calidad Profesional Garantizada</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Dale brillo a tus espacios y <span class="bg-gradient-to-r from-brand-400 to-emerald-300 bg-clip-text text-transparent">transforma tu hogar</span>.
+                </h1>
+                <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal">
+                    Pinturas DIAMANTE para interiores ofrece máxima cobertura, colores vibrantes y fórmulas de alta durabilidad para renovar tus paredes sin remodelaciones costosas.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#catalogo" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-base transition-all shadow-xl shadow-brand-600/30 flex items-center justify-center space-x-2">
+                        <span>Ver Presentaciones</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#calculadora" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card hover:bg-slate-800/80 text-white font-semibold text-base transition-all flex items-center justify-center space-x-2 border-slate-700">
+                        <i data-lucide="calculator" class="w-5 h-5 text-brand-400"></i>
+                        <span>Calcular Metros</span>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-3 gap-6 pt-8 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                    <div>
+                        <div class="text-2xl font-bold text-white">100%</div>
+                        <div class="text-xs text-slate-400">Lavable y Resistente</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">12 m²/L</div>
+                        <div class="text-xs text-slate-400">Alto Rendimiento</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">Bajo COV</div>
+                        <div class="text-xs text-slate-400">Seguro para Familias</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta Visual / Mockup Estilizado -->
+            <div class="lg:col-span-5 relative">
+                <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-brand-600 to-emerald-400 opacity-30 blur-xl"></div>
+                <div class="relative glass-card rounded-2xl p-6 sm:p-8 border border-slate-700/60 shadow-2xl">
+                    <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-700/50">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <span class="text-xs font-mono text-slate-400">diamante-interior.app</span>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-slate-900/90 rounded-xl p-4 border border-slate-800">
+                            <span class="text-xs text-brand-400 font-semibold uppercase tracking-wider">Producto Destacado</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Vinimex Interior Diamante</h3>
+                            <p class="text-sm text-slate-400 mt-1">Fórmula avanzada con agentes antihongo y acabado ultra mate de gran elegancia.</p>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800 text-center">
+                                <i data-lucide="shield-check" class="w-6 h-6 text-brand-400 mx-auto mb-2"></i>
+                                <span class="text-xs font-semibold text-slate-200">Garantía de Cubrición</span>
+                            </div>
+                            <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800 text-center">
+                                <i data-lucide="palette" class="w-6 h-6 text-brand-400 mx-auto mb-2"></i>
+                                <span class="text-xs font-semibold text-slate-200">+40 Tonos Disponibles</span>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-gradient-to-r from-brand-900/40 to-emerald-950/40 border border-brand-500/20 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-slate-400">Presentación Cubeta</span>
+                                <div class="text-lg font-bold text-white">19 Litros (Rendimiento Óptimo)</div>
+                            </div>
+                            <span class="px-3 py-1 bg-brand-600 text-white rounded-lg text-xs font-bold">Popular</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISUALIZADOR INTERACTIVO DE TONOS -->
+    <section id="visualizador" class="py-20 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Visualizador de Ambientes y Tonos</h2>
+                <p class="text-slate-400 mt-4 text-base">Prueba nuestros tonos estrella de forma interactiva para imaginar cómo lucirán tus paredes antes de aplicar la pintura.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- Panel de Muestra de Pared -->
+                <div class="lg:col-span-8">
+                    <div id="room-wall" class="relative h-[380px] sm:h-[480px] rounded-3xl overflow-hidden shadow-2xl transition-all duration-500 border border-slate-700/80 bg-[#f8fafc] flex items-end justify-center p-8">
+                        <!-- Sombra o elemento decorativo en la pared simulada -->
+                        <div class="absolute top-8 left-8 bg-white/80 backdrop-blur-md px-4 py-2 rounded-xl shadow-lg border border-slate-200 text-slate-900 font-bold text-sm flex items-center space-x-2">
+                            <div id="current-color-dot" class="w-4 h-4 rounded-full bg-[#f1f5f9] border border-slate-300"></div>
+                            <span id="current-color-name">Selecciona un tono</span>
+                        </div>
+
+                        <div class="glass-card px-6 py-3 rounded-2xl text-center shadow-xl">
+                            <span class="text-xs uppercase tracking-wider text-slate-300 font-semibold block">Acabado Seleccionado</span>
+                            <span id="current-finish-label" class="text-white font-bold text-base">Mate Elegante</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Selector de Tonos y Acabados -->
+                <div class="lg:col-span-4 space-y-6">
+                    <div class="glass-card p-6 rounded-3xl space-y-6">
+                        <h3 class="text-lg font-bold text-white flex items-center">
+                            <i data-lucide="palette" class="w-5 h-5 mr-2 text-brand-400"></i> Paleta de Colores
+                        </h3>
+                        
+                        <div class="grid grid-cols-3 gap-3">
+                            <button onclick="changeWallColor('#f8fafc', 'Blanco Puro')" class="p-3 rounded-xl border border-slate-700 bg-slate-100 text-slate-900 font-semibold text-xs flex flex-col items-center space-y-1 hover:scale-105 transition-transform">
+                                <div class="w-8 h-8 rounded-full bg-[#f8fafc] border border-slate-300 shadow"></div>
+                                <span>Blanco</span>
+                            </button>
+                            <button onclick="changeWallColor('#e2e8f0', 'Gris Neblina')" class="p-3 rounded-xl border border-slate-700 bg-slate-100 text-slate-900 font-semibold text-xs flex flex-col items-center space-y-1 hover:scale-105 transition-transform">
+                                <div class="w-8 h-8 rounded-full bg-[#cbd5e1] border border-slate-400 shadow"></div>
+                                <span>Gris Neblina</span>
+                            </button>
+                            <button onclick="changeWallColor('#fef3c7', 'Marfil Cálido')" class="p-3 rounded-xl border border-slate-700 bg-slate-100 text-slate-900 font-semibold text-xs flex flex-col items-center space-y-1 hover:scale-105 transition-transform">
+                                <div class="w-8 h-8 rounded-full bg-[#fef3c7] border border-amber-200 shadow"></div>
+                                <span>Marfil</span>
+                            </button>
+                            <button onclick="changeWallColor('#bfdbfe', 'Azul Cielo')" class="p-3 rounded-xl border border-slate-700 bg-slate-100 text-slate-900 font-semibold text-xs flex flex-col items-center space-y-1 hover:scale-105 transition-transform">
+                                <div class="w-8 h-8 rounded-full bg-[#93c5fd] border border-blue-300 shadow"></div>
+                                <span>Azul Cielo</span>
+                            </button>
+                            <button onclick="changeWallColor('#d9f99d', 'Verde Oliva Suave')" class="p-3 rounded-xl border border-slate-700 bg-slate-100 text-slate-900 font-semibold text-xs flex flex-col items-center space-y-1 hover:scale-105 transition-transform">
+                                <div class="w-8 h-8 rounded-full bg-[#bef264] border border-lime-300 shadow"></div>
+                                <span>Verde Oliva</span>
+                            </button>
+                            <button onclick="changeWallColor('#fed7aa', 'Terracota Claro')" class="p-3 rounded-xl border border-slate-700 bg-slate-100 text-slate-900 font-semibold text-xs flex flex-col items-center space-y-1 hover:scale-105 transition-transform">
+                                <div class="w-8 h-8 rounded-full bg-[#fdba74] border border-orange-300 shadow"></div>
+                                <span>Terracota</span>
+                            </button>
+                        </div>
+
+                        <div class="space-y-3 pt-2">
+                            <label class="text-xs font-semibold uppercase text-slate-400 tracking-wider">Tipo de Acabado</label>
+                            <div class="grid grid-cols-2 gap-2">
+                                <button onclick="setFinish('Mate Elegante')" class="px-4 py-2.5 rounded-xl bg-brand-600 text-white font-semibold text-xs transition-all text-center">Mate</button>
+                                <button onclick="setFinish('Satinado Brillante')" class="px-4 py-2.5 rounded-xl bg-slate-800 text-slate-300 hover:bg-slate-700 font-semibold text-xs transition-all text-center">Satinado</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULADORA DE RENDIMIENTO Y PINTURA -->
+    <section id="calculadora" class="py-20 bg-slate-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 border border-slate-700/80 shadow-2xl">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <div class="inline-flex p-3 rounded-2xl bg-brand-500/10 text-brand-400 mb-4">
+                        <i data-lucide="calculator" class="w-8 h-8"></i>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Calculadora de Pintura DIAMANTE</h2>
+                    <p class="text-slate-400 text-sm mt-2">Ingresa los metros cuadrados aproximados de la superficie para calcular cuánta pintura necesitas.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">Metros cuadrados a pintar (m²)</label>
+                            <input type="number" id="m2-input" value="40" min="5" max="1000" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white font-bold focus:outline-none focus:border-brand-500 text-lg" oninput="calcularPintura()">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">Número de Manos (Capas)</label>
+                            <select id="manos-input" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white font-semibold focus:outline-none focus:border-brand-500" onchange="calcularPintura()">
+                                <option value="1">1 Mano (Repintado rápido)</option>
+                                <option value="2" selected>2 Manos (Recomendado estándar)</option>
+                                <option value="3">3 Manos (Superficies oscuras)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900/90 rounded-2xl p-6 border border-slate-800 space-y-4">
+                        <span class="text-xs uppercase tracking-wider text-brand-400 font-semibold block">Estimación de Material Requerido</span>
+                        <div class="flex items-baseline justify-between pb-4 border-b border-slate-800">
+                            <span class="text-slate-400 text-sm">Litros Totales:</span>
+                            <span id="resultado-litros" class="text-2xl font-extrabold text-white">10 L</span>
+                        </div>
+                        <div class="flex items-baseline justify-between pb-4 border-b border-slate-800">
+                            <span clas
